@@ -1,0 +1,85 @@
+ivan_@LAPTOP-37LSDQ3C MINGW64 ~/OneDrive/CURSOS/CODING DOJO
+$ cd GIT/
+
+ivan_@LAPTOP-37LSDQ3C MINGW64 ~/OneDrive/CURSOS/CODING DOJO/GIT
+$ mkdir basic_repo
+
+ivan_@LAPTOP-37LSDQ3C MINGW64 ~/OneDrive/CURSOS/CODING DOJO/GIT
+$ cd basic_repo/
+
+ivan_@LAPTOP-37LSDQ3C MINGW64 ~/OneDrive/CURSOS/CODING DOJO/GIT/basic_repo
+$ git init
+Initialized empty Git repository in C:/Users/ivan_/OneDrive/CURSOS/CODING DOJO/GIT/basic_repo/.git/
+
+ivan_@LAPTOP-37LSDQ3C MINGW64 ~/OneDrive/CURSOS/CODING DOJO/GIT/basic_repo (master)
+$ touch basic_repo.html
+
+ivan_@LAPTOP-37LSDQ3C MINGW64 ~/OneDrive/CURSOS/CODING DOJO/GIT/basic_repo (master)
+$ touch styles.css
+
+ivan_@LAPTOP-37LSDQ3C MINGW64 ~/OneDrive/CURSOS/CODING DOJO/GIT/basic_repo (master)
+$ touch js.js
+
+ivan_@LAPTOP-37LSDQ3C MINGW64 ~/OneDrive/CURSOS/CODING DOJO/GIT/basic_repo (master)
+$ git add .
+
+ivan_@LAPTOP-37LSDQ3C MINGW64 ~/OneDrive/CURSOS/CODING DOJO/GIT/basic_repo (master)
+$ git commit -m "Commit inicial"
+[master (root-commit) 8a53889] Commit inicial
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 basic_repo.html
+ create mode 100644 js.js
+ create mode 100644 styles.css
+
+ivan_@LAPTOP-37LSDQ3C MINGW64 ~/OneDrive/CURSOS/CODING DOJO/GIT/basic_repo (master)
+$ git add .
+
+ivan_@LAPTOP-37LSDQ3C MINGW64 ~/OneDrive/CURSOS/CODING DOJO/GIT/basic_repo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   basic_repo.html
+        modified:   styles.css
+
+
+ivan_@LAPTOP-37LSDQ3C MINGW64 ~/OneDrive/CURSOS/CODING DOJO/GIT/basic_repo (master)
+$ git commit -m "Cambios en html y css"
+[master 442ab27] Cambios en html y css
+ 2 files changed, 17 insertions(+)
+
+ivan_@LAPTOP-37LSDQ3C MINGW64 ~/OneDrive/CURSOS/CODING DOJO/GIT/basic_repo (master)
+$ git remote add origin https://github.com/ivanpatriciop/basic_repo.git
+
+ivan_@LAPTOP-37LSDQ3C MINGW64 ~/OneDrive/CURSOS/CODING DOJO/GIT/basic_repo (master)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 793 bytes | 198.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ivanpatriciop/basic_repo.git
+ * [new branch]      master -> master
+
+ivan_@LAPTOP-37LSDQ3C MINGW64 ~/OneDrive/CURSOS/CODING DOJO/GIT/basic_repo (master)
+$ git add .
+
+ivan_@LAPTOP-37LSDQ3C MINGW64 ~/OneDrive/CURSOS/CODING DOJO/GIT/basic_repo (master)
+$ git commit -m "Versión 2 con modificaciones en html y css 2 "
+[master 09f7763] Versión 2 con modificaciones en html y css 2
+ 2 files changed, 9 insertions(+), 1 deletion(-)
+
+ivan_@LAPTOP-37LSDQ3C MINGW64 ~/OneDrive/CURSOS/CODING DOJO/GIT/basic_repo (master)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 590 bytes | 295.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ivanpatriciop/basic_repo.git
+   442ab27..09f7763  master -> master
+
+ivan_@LAPTOP-37LSDQ3C MINGW64 ~/OneDrive/CURSOS/CODING DOJO/GIT/basic_repo (master)
